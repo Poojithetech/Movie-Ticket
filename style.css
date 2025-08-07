@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1598899134739-e6fc42a4f54b'); /* Movie theater BG */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.movie-container h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #f5c518;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  list-style: none;
+  gap: 15px;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button#bookBtn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #f5c518;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button#bookBtn:hover {
+  background-color: #e0b317;
+}
+
+.confirmation {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #6feaf6;
+}
+
+.hidden {
+  display: none;
+}
